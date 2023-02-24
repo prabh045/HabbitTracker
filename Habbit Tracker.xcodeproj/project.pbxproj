@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7F6C771729A7533800F3FAC1 /* ActivityList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F6C771629A7533800F3FAC1 /* ActivityList.swift */; };
+		7F7064FA29A759330077F208 /* ActivityDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7F7064F929A759330077F208 /* ActivityDetail.swift */; };
 		7FBE4CEB29A64314000FAF8A /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FBE4CEA29A64314000FAF8A /* Activity.swift */; };
 		7FFA93FD2994E34E00439950 /* Habbit_TrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA93FC2994E34E00439950 /* Habbit_TrackerApp.swift */; };
 		7FFA93FF2994E34E00439950 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FFA93FE2994E34E00439950 /* ContentView.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		7F6C771629A7533800F3FAC1 /* ActivityList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityList.swift; sourceTree = "<group>"; };
+		7F7064F929A759330077F208 /* ActivityDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetail.swift; sourceTree = "<group>"; };
 		7FBE4CEA29A64314000FAF8A /* Activity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		7FFA93F92994E34E00439950 /* Habbit Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Habbit Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FFA93FC2994E34E00439950 /* Habbit_TrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habbit_TrackerApp.swift; sourceTree = "<group>"; };
@@ -38,6 +40,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7F7064FB29A90A1D0077F208 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7FBE4CEA29A64314000FAF8A /* Activity.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7F7064FC29A90A3C0077F208 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7F6C771629A7533800F3FAC1 /* ActivityList.swift */,
+				7FFA940A2994E7E700439950 /* AddActivity.swift */,
+				7F7064F929A759330077F208 /* ActivityDetail.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		7FFA93F02994E34E00439950 = {
 			isa = PBXGroup;
 			children = (
@@ -59,9 +79,8 @@
 			children = (
 				7FFA93FC2994E34E00439950 /* Habbit_TrackerApp.swift */,
 				7FFA93FE2994E34E00439950 /* ContentView.swift */,
-				7FFA940A2994E7E700439950 /* AddActivity.swift */,
-				7F6C771629A7533800F3FAC1 /* ActivityList.swift */,
-				7FBE4CEA29A64314000FAF8A /* Activity.swift */,
+				7F7064FC29A90A3C0077F208 /* Views */,
+				7F7064FB29A90A1D0077F208 /* Models */,
 				7FFA94002994E34F00439950 /* Assets.xcassets */,
 				7FFA94022994E34F00439950 /* Preview Content */,
 			);
@@ -151,6 +170,7 @@
 				7FFA940B2994E7E700439950 /* AddActivity.swift in Sources */,
 				7FBE4CEB29A64314000FAF8A /* Activity.swift in Sources */,
 				7FFA93FD2994E34E00439950 /* Habbit_TrackerApp.swift in Sources */,
+				7F7064FA29A759330077F208 /* ActivityDetail.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

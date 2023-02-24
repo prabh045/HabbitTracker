@@ -8,9 +8,11 @@
 import Foundation
 
 class Activity: ObservableObject {
-    struct ActivityModel: Codable, Hashable {
+    struct ActivityModel: Codable, Hashable, Identifiable, Equatable {
+        var id = UUID()
         var name: String
         var description: String
+        var completionCount: Int = 0
     }
     @Published var items: [ActivityModel] {
         didSet {

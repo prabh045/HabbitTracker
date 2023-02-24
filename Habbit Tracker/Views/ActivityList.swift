@@ -13,14 +13,19 @@ struct ActivityList: View {
     var body: some View {
         NavigationView {
             List(activity.items, id: \.self) { activity in
-                VStack(alignment: .leading, spacing: 5) {
-                    Text(activity.name)
-                        .font(.headline)
-                        .fontWeight(.bold)
-                    Text(activity.description)
-                        .font(.body)
-                        .fontWeight(.light)
-                        .foregroundColor(.gray)
+                NavigationLink {
+                    ActivityDetail(activity: activity, activityRef: self.activity)
+                } label: {
+                    VStack(alignment: .leading, spacing: 5) {
+                        Text(activity.name)
+                            .font(.headline)
+                            .fontWeight(.bold)
+                        Text(activity.description)
+                            .font(.body)
+                            .fontWeight(.light)
+                            .foregroundColor(.gray)
+                    }
+
                 }
             }
             .navigationTitle("Activity List")
